@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+</head>
+
+<body>
+    <h1>
+        <% const days=["Sunday", "Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday" ]; const
+            dayName=days[new Date().getDay()]; %>
+            <%= dayName %>
+    </h1>
+
+    <form action="/input-calories">
+        <label>input calories</label>
+        <input name="caloriesInputed" type="number" required>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+
+</html>
